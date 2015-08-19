@@ -53,7 +53,6 @@ public class Factors_Tutorial_Questions extends ActionBarActivity  implements Vi
         EditText firstNumber = (EditText)findViewById(R.id.eT1);
         EditText secondNumber = (EditText)findViewById(R.id.eT2);
         TextView x = (TextView)findViewById( R.id.checktV1);
-5
         int a = Integer.parseInt(firstNumber.getText().toString());
         int b = Integer.parseInt(secondNumber.getText().toString());
         if(a*b == randomNum){
