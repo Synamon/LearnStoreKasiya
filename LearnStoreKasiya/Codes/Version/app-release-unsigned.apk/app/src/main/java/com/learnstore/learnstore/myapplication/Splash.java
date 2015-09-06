@@ -3,31 +3,45 @@ package com.learnstore.learnstore.myapplication;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MotionEvent;
 
 public class Splash extends Activity {
+
+    protected Intent menuIntent = new Intent("com.learnstore.learnstore.myapplication.MAINMENU");
+    protected boolean tStop = true;
+    Thread splashTimer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        Thread splashTimer = new Thread(){
-                   public void run(){
-                       try{
-                        sleep(3000);
+        splashTimer = new Thread() {
+            public void run() {
+                try {
+                    synchronized (this) {
+                        wait(3000);
+                    }
 
-                           Intent menuIntent = new Intent("com.learnstore.learnstore.myapplication.MAINMENU");
-                           startActivity(menuIntent);
-                       }catch(Exception e){
+                } catch (Exception e) {
 
-                       }finally {
-                                 finish();
-                       }
-                   }
+                } finally {
+                    startActivity(menuIntent);
+                    finish();
+                }
+            }
         };
 
-               splashTimer.start();
+        splashTimer.start();
     }
 
+    public boolean onTouchEvent(MotionEvent event) {
+        if (event.getAction() == MotionEvent.ACTION_DOWN) {
+            synchronized (splashTimer) {
+                splashTimer.notify();
+            }
+
+        } return true;
+    }
 
 }

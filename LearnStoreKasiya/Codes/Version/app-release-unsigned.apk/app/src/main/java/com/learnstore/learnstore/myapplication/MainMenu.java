@@ -28,13 +28,9 @@ public class MainMenu extends ListActivity{
     protected void onListItemClick(ListView lv, View v, int position, long id){
         super.onListItemClick(lv,v,position,id);
         String openClass = classNames[position];
-        try{
-            Class selected = Class.forName("com.learnstore.learnstore.myapplication."+openClass);
-            Intent selectedIntent = new Intent(this,selected);
-            startActivity(selectedIntent);
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
+        //Class selected = Class.forName("com.learnstore.learnstore.myapplication."+openClass);
+        Intent selectedIntent = new Intent(this,com.learnstore.learnstore.myapplication.quadraticchapter.MainActivity.class);
+        startActivity(selectedIntent);
     }
 
     @Override

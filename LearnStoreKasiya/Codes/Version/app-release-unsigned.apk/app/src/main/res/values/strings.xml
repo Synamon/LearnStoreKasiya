@@ -7,4 +7,43 @@
     <string name="checkButton" >Check</string>
     <string name="title_activity_splash">Splash</string>
     <string name="synamon_text">Synamon</string>
+
+
+    <!-- Strings for the Quadratic (Chapter) -->
+
+    <!-- Strings for the Title Page -->
+    <string name="quadraticTitle">Quadratic</string>
+    <string name="quadraticSubTitle">Equations</string>
+
+    <!-- Strings for the 1st Page -->
+    <string name="quadraticLessonTitle">Quadratic</string>
+    <string name="quadraticLessonTDisplay">x<sup><small>2</small></sup>+2x+1</string>
+    <string name="quadraticLessonText">This is a quadratic equation. These equations are very
+    important in the world of Mathematics. These are one of the first type of equations
+    all mathematicians need to learn to solve and work with. Though they may look complicated and
+    hard - they are quite easy to solve.</string>
+
+    <!-- Strings for the 2nd Page -->
+    <string name="quadraticLesson2Title">What makes it Quadratic</string>
+    <string name="quadraticLesson2TDisplay">x<sup><small>2</small></sup>+2x+1
+     <br />x<sup><small>2</small></sup>+2x+1</string>
+    <string name="quadraticLesson2Text">What makes an equation quadratic? All quadratic equations
+    have squared term - this means that they will have something like x<sup><small>2</small></sup>.
+    The first expression above is a quadratic equation, so is the second one. But the second one
+    is not. Now that you are able to spot quadratic equations you can begin to solve them...</string>
+
+    <!-- Strings for the 4th Page -->
+    <string name="quadraticLesson4Title">Factors</string>
+    <string name="quadraticLesson4TDisplay">12</string>
+    <string name="quadraticLesson4Text">First we must learn and use factors. For example factors of 12
+    are numbers that can divide 36 without any remainders. So the factors of 36 are: 1x12, 2x6, 3x4,
+    . 1,2,3,4,6.</string>
+
+    <!-- Strings for the 5th Page -->
+    <string name="quadraticLesson5Title">Factors</string>
+    <string name="quadraticLesson5Text">blah blah blah blah now that you know how to use the factors
+    try to work out the factors of the following</string>
+
+
+
 </resources>
